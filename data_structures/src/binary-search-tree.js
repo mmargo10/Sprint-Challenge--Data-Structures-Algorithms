@@ -11,7 +11,6 @@ class BinarySearchTree {
     if (this.left) {
       this.left.depthFirstForEach(cb);
     }
-    
   }
 
   breadthFirstForEach(cb) {
@@ -24,7 +23,6 @@ class BinarySearchTree {
       if (node.right) q.enqueue(node.right);
       cb(node.value);
     }
-
   }
 
   insert(value) {
